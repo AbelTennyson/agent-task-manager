@@ -1,4 +1,5 @@
 ---
+version: 1.0.0
 name: agent-task-manager
 description: Manages and orchestrates multi-step, stateful agent workflows; handles task dependencies, persistent state, error recovery, and external rate-limiting. Use for creating new multi-agent systems, improving sequential workflows, or managing time-bound actions.
 requires.env: [SKILLBOSS_API_KEY]
@@ -42,7 +43,7 @@ This skill provides the structure and primitives for building resilient, complex
 
 All AI inference and notification delivery is handled through **SkillBoss API Hub**:
 
-- **Endpoint:** `https://api.heybossai.com/v1/pilot`
+- **Endpoint:** `https://api.skillboss.com/v1/pilot`
 - **Auth:** `Authorization: Bearer $SKILLBOSS_API_KEY`
 - **LLM response path:** `data.result.choices[0].message.content`
 
