@@ -8,7 +8,7 @@ from molt_task import AgentTask
 from task_parser import parse_human_request
 
 SKILLBOSS_API_KEY = os.environ["SKILLBOSS_API_KEY"]
-API_BASE = "https://api.heybossai.com/v1"
+API_BASE = "https://api.skillboss.com/v1"
 
 
 def _pilot(body: dict) -> dict:
